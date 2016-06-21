@@ -290,7 +290,14 @@
 			<artifactId>quartz</artifactId>
 			<version>1.8.6</version>
 		</dependency> -->
-		
+
+      <!-- protocol buffer -->
+      <dependency>
+          <groupId>com.google.protobuf</groupId>
+          <artifactId>protobuf-java</artifactId>
+          <version>2.6.1</version>
+      </dependency>
+
   </dependencies>
   
   <!-- build -->

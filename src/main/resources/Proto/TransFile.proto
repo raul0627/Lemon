@@ -1,0 +1,16 @@
+option java_package="com.hexin.Dto.Proto";
+option java_outer_classname="TransFileInfo";
+
+message FileInfo {
+    // 文件数量
+    required int32 fileCount = 1;
+    // 文件单元
+    message FileCell {
+        // 文件名
+        required string name = 1;
+        // 文件长度
+        required int64 length = 2;
+    }
+    // 动态文件单元
+    repeated FileCell cell = 2;
+}
