@@ -1,0 +1,7 @@
+*.prefs
+*.class
+*.iml
+/target/
+!/.gitignore
+*.project
+/.idea/
