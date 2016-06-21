@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    <display-name>Lemon</display-name>
+    <display-name>pgTool</display-name>
 
     <!-- Log4j配置 -->
     <context-param>
@@ -18,8 +18,7 @@
     <!-- spring配置加载 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <!--<param-value>classpath:applicationContext-*.xml</param-value>-->
-        <param-value>classpath:applicationContext-mvc.xml</param-value>
+        <param-value>classpath:applicationContext-*.xml</param-value>
     </context-param>
 
     <!-- 字符集 过滤器  -->
