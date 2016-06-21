@@ -62,9 +62,21 @@
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
-    <listener>
+    <!--<listener>
         <listener-class>com.hexin.Nio.HaloServerListener</listener-class>
-    </listener>
+    </listener>-->
+
+    <!-- 强制使用SSL -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>SSL</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <!--<transport-guarantee>CONFIDENTIAL</transport-guarantee>-->
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
 
     <!-- 首页 -->
     <welcome-file-list>

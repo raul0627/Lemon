@@ -136,6 +136,19 @@
           <version>3.1.0</version>
       </dependency>
 
+      <!-- httpclient -->
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpclient</artifactId>
+          <version>4.3.3</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpcore</artifactId>
+          <version>4.3.3</version>
+      </dependency>
+
       <!-- netty -->
       <dependency>
           <groupId>io.netty</groupId>
