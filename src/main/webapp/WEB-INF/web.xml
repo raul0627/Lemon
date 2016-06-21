@@ -15,11 +15,16 @@
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
 
+    <!-- 过滤路径设置 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+        <!--<listener-class>com.hexin.Nio.HaloServerListener</listener-class>-->
+    </listener>
     <!-- spring配置加载 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <!--<param-value>classpath:applicationContext-*.xml</param-value>-->
-        <param-value>classpath:applicationContext-mvc.xml</param-value>
+        <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
 
     <!-- 字符集 过滤器  -->
@@ -52,19 +57,14 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <!-- 过滤路径设置 -->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-        <!--<listener-class>com.hexin.Nio.HaloServerListener</listener-class>-->
-    </listener>
     <servlet-mapping>
         <servlet-name>server</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
-    <listener>
-        <listener-class>com.hexin.Nio.HaloServerListener</listener-class>
-    </listener>
+    <!-- <listener>
+         <listener-class>com.hexin.Nio.HaloServerListener</listener-class>
+     </listener>-->
 
     <!-- 首页 -->
     <welcome-file-list>
